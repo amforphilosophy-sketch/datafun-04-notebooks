@@ -23,15 +23,19 @@ to get these projects running on your machine.
   - [RESOURCES.md](./module/RESOURCES.md)
   - [seaborn-datasets.md](./module/seaborn-datasets.md)
   - [TROUBLESHOOTING.md](./module/TROUBLESHOOTING.md)
-## Custom Project: Tips Dataset EDA
+## Custom Project
 
-This project applies exploratory data analysis (EDA) skills to a new data set: the Seaborn **tips** dataset, which records restaurant bills, tips, and party information.
+### Dataset
 
-**Notebook:** [eda_mohmand.ipynb](https://github.com/amforphilosophy-sketch/datafun-04-notebooks/blob/main/notebooks/eda_mohmand.ipynb)
+The Seaborn built-in tips dataset (244 records), which records restaurant bills, tips, and party information. Columns include total_bill, tip, sex, smoker, day, time, and size.
 
-**Dataset:** Seaborn built-in `tips` dataset (244 records). Columns include total_bill, tip, sex, smoker, day, time, and size.
+### Phase 4 Modifications
 
-**What the notebook does:**
+I created a custom version of the example application (app_mohmand.py, modified from Denise Case's app_case.py). I updated the header (filename, author, date) and added a custom log line inside the main() success block to mark my version: "*** Ahmad Mohmand's Custom Version (modified from Denise Case's example) ***". The module runs with `uv run python -m datafun.app_mohmand`.
+
+### Phase 5 Custom Project
+
+I applied EDA skills to the tips dataset in a new notebook (eda_mohmand.ipynb, modified from Denise Case's example). The notebook:
 
 - Loads the tips dataset and inspects its shape, columns, and data types
 - Computes summary statistics (mean, median, min, max) for total_bill
@@ -39,10 +43,10 @@ This project applies exploratory data analysis (EDA) skills to a new data set: t
 - Creates a scatter plot of total_bill vs. tip, colored by day (Chart 1)
 - Creates a box plot of total_bill distribution by day (Chart 2)
 
-**Key findings:**
+Key findings:
 
 - Total bill and tip show a strong positive correlation (about 0.68): larger bills tend to bring larger tips.
 - Total bill and party size are also positively correlated (about 0.60).
 - A linear model of tip as a function of total_bill is a reasonable next step.
 
-This custom project was modified from Denise Case's example notebook.
+This custom project was modified from Denise Case's example.
