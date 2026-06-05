@@ -23,3 +23,26 @@ to get these projects running on your machine.
   - [RESOURCES.md](./module/RESOURCES.md)
   - [seaborn-datasets.md](./module/seaborn-datasets.md)
   - [TROUBLESHOOTING.md](./module/TROUBLESHOOTING.md)
+## Custom Project: Tips Dataset EDA
+
+This project applies exploratory data analysis (EDA) skills to a new data set: the Seaborn **tips** dataset, which records restaurant bills, tips, and party information.
+
+**Notebook:** [eda_mohmand.ipynb](https://github.com/amforphilosophy-sketch/datafun-04-notebooks/blob/main/notebooks/eda_mohmand.ipynb)
+
+**Dataset:** Seaborn built-in `tips` dataset (244 records). Columns include total_bill, tip, sex, smoker, day, time, and size.
+
+**What the notebook does:**
+
+- Loads the tips dataset and inspects its shape, columns, and data types
+- Computes summary statistics (mean, median, min, max) for total_bill
+- Builds a correlation heatmap of the numeric columns (total_bill, tip, size)
+- Creates a scatter plot of total_bill vs. tip, colored by day (Chart 1)
+- Creates a box plot of total_bill distribution by day (Chart 2)
+
+**Key findings:**
+
+- Total bill and tip show a strong positive correlation (about 0.68): larger bills tend to bring larger tips.
+- Total bill and party size are also positively correlated (about 0.60).
+- A linear model of tip as a function of total_bill is a reasonable next step.
+
+This custom project was modified from Denise Case's example notebook.
